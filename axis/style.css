@@ -1,0 +1,21 @@
+* {transition: opacity 0.7s;}
+.arrow {z-index: 100;position: absolute;bottom:65px;left: 34px;width: 260px;height: 130px;border: 3px solid #bf2f24;border-bottom-width: 0;border-radius: 50% 50% 0 0 / 100% 100% 0 0;}
+.arrow:after {content: '';display: block;position: absolute;width: 0;height: 0;border: 15px solid transparent;bottom: -18px;left: calc(100% - 14px);border-top-color: #bf2f24;transform: rotate(-7deg);}
+
+input[type='text']{width: 30px;padding: 2px;text-align: center;z-index: 10;}
+.arrow input[type='text']{position: absolute;left: 50%;top: -30px;margin-left: -19px;}
+
+.field {width: 875px;height: 500px;position: relative;margin: 0 auto;}
+#sprite {position: absolute; bottom: 0; left: 0;}
+#for-result {font-size: 40px;font-family: inherit;width: 50px;margin-left: -69px;}
+#result {width: 50px;display: inline-block;}
+#first-arrow {width: 269px;}
+#second-arrow {left: 308px;width: 269px;}
+#status {text-align: center;padding: 40px;font-size: 40px;}
+#for-first-span, #for-second-span {width: 30px;display: inline-block;text-align: center;position: absolute;left: 50%;margin-left: -15px;padding: 0;top: -27px;}
+
+span {padding: 2px 5px;border-radius: 3px;}
+.warning {background: orange;}
+.error {color: red;}
+.hidden {opacity: 0;}
+
