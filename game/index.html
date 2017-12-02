@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Game</title>
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+	<link rel="manifest" href="/icons/manifest.json">
+	<meta name="theme-color" content="#008b8b">
+</head>
+<body>
+
+	<div class="block hidden"></div>
+
+	<div class="message-block hidden hidden-full">
+		<div class="message">
+			<div class="middle-block">
+				<div id="winheader" class="hidden">
+					<h3>Победа!</h3>
+				</div>
+				<div id="wintext" class="hidden">
+					<div class="block-row">
+						<p>Поздравляю, ты победил.<br>Попробуй свои силы выбрав сложность повыше.</p>
+					</div>
+				</div>
+				<hr id="winhr" class="hidden">
+				<div id="newgame" class="hidden">
+					<h3>Новая игра</h3>
+					<div class="block-row">
+						<label for="height">Стороны квадратов (50-100):</label>
+						<input name="height" type="text" value="70">
+					</div>
+					<div class="block-row">
+						<label for="row">Количество строк (3-6):</label>
+						<input name="row" type="text" value="3">
+					</div>
+					<div class="block-row">
+						<label for="col">Количество столбцов (3-6):</label>
+						<input name="col" type="text" value="3">
+					</div>
+					<div class="block-row">
+						<button id="startgame">Начать игру &#9658;</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+	<script src="main.js"></script>
+	
+</html>

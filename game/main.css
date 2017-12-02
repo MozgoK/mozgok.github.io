@@ -1,0 +1,144 @@
+body {
+	background: darkcyan;
+	font-family: 'Jura', sans-serif;
+	font-size: 16px;
+}
+
+.block {
+	display: block;
+	min-width: 100px;
+	background: #fff;
+	position: absolute;
+	left: 50%;
+	top:50%;
+}
+
+.mini-block {
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	position: absolute;
+	transition: all .7s ease-in-out;
+	background-image: linear-gradient(180deg, #fb5f65, #f7c66d, #6fce6f, #49a5ea, #9b6de3);
+	background-size: 1000% 1000%;
+	box-shadow: inset 0 0 1px 0 #000;
+	font-size: 20px;
+}
+
+.mini-block:hover {
+	box-shadow: 0 0 4px 0 #000;
+	cursor: pointer;
+	z-index: 150;
+}
+
+.mini-block:after {
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	line-height: 70px;
+	margin: 0;
+	display: block;
+	color: #fff;
+	text-shadow: 0 0 15px rgba(0,0,0,.5);
+	z-index: 100;
+}
+
+.elem-00 {
+	background: #fff;
+}
+
+.elem-00:after {
+	display: none;
+}
+
+
+.message-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .3);
+    opacity: 1;
+    transition: all .7s;
+}
+
+.message {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#winheader, #wintext, #winhr, #newgame, .block {
+	transition: opacity .7s, transform .7s;
+}
+
+
+
+.hidden {
+	opacity: 0;
+	transform: translateY(30px);
+}
+.hidden-full {
+	display: none;
+}
+
+.message-block.hidden {
+	transform: none;
+}
+
+
+
+.middle-block { display: inline-block; width: 530px; }
+
+
+#winheader, #wintext, div#newgame {
+    background: #fff;
+    display: inline-block;
+    width: calc(100% - 30px);
+    padding: 0 15px 15px 15px;
+    box-shadow: 5px 5px 1px 0 rgba(0,0,0,.3);
+}
+#winheader {padding: 0 15px;}
+#wintext {margin-bottom: 50px;}
+#winhr {display: none !important;}
+
+
+.block-row {
+    margin-top: 10px;
+}
+label {
+    width: calc(50% - 30px);
+    display: inline-block;
+    text-align: right;
+}
+
+input[type="text"] {
+    width: calc(50% - 30px);
+    padding: 3px;
+    text-align: center;
+    border-color: rgba(47, 79, 79,.8);
+    border-width: 1px;
+    box-shadow: 3px 3px 0px 0 rgba(0,0,0,.3);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+button#startgame {
+    background: linear-gradient(90deg, #49a5ea, #9b6de3);
+    background-size: 150%;
+    background-position: 0% 0%;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background .3s;
+    box-shadow: 3px 3px 0px 0 rgba(0,0,0,.3);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+}
+button#startgame:hover {
+    background-position: 100% 0%;
+}
